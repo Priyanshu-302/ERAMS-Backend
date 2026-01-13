@@ -25,7 +25,7 @@ create table roles(
 -- Permission table
 create table permissions(
     id serial primary key,
-    name text not null,
+    code text not null,
     role_id references roles(id)
 )
 
